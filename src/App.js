@@ -1,12 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <h2>Ready to GO.</h2>
-    </div>
-  );
+class App extends Component {
+  state = {
+
+  }
+
+  componentDidMount() {
+    // console.log("componentDidMount called");
+  }
+
+  componentWillUnmount() {
+    // console.log('componentWillUnMount called')
+  }
+
+  render() {
+
+    return (
+      <div className="App">
+        <h2>Ready to GO.</h2>
+      </div>
+    );
+  }
 }
 
 export default App;
