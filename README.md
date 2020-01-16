@@ -2,6 +2,14 @@
 
 Look for multiple steps in different branches.
 
+1. Firebase: setup
+2. Postman: add sample data
+3. App: add login/logout (modify sample data to match uid)
+4. App: get data
+5. App: post data
+6. App: delete data
+7. App: update data
+
 ## Project Setup
 
 1. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
