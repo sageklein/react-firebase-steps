@@ -15,6 +15,17 @@ const getBoardsByUid = (uid) => {
  })
  .then((parsedResponse) => {
      console.log("parsed", parsedResponse);
+     const allBoardsObject = parsedResponse;
+		const boards = [];
+		if (allBoardsObject != null) {
+			Object.keys(allBoardsObject).forEach(boardId => {
+				const newBoard = allBoardsObject[boardId];
+				newBoard.id = boardId;
+				boards.push(newBoard);
+			});
+        }
+        console.log("boards", boards);
+		return boards;
  })
 }
 
