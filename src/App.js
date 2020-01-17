@@ -5,7 +5,7 @@ import './App.scss';
 import fbConnection from "./helpers/data/fbConnection";
 import NavBar from './components/navBar/NavBar';
 import Auth from './components/auth/Auth';
-import None from './components/None';
+import BoardContainer from "./components/boardContainer/BoardContainer";
 
 fbConnection();
 
@@ -46,7 +46,7 @@ class App extends Component {
 		//   componentToLoad = <Auth />;
 		// }
 		if (this.state.authed) {
-			componentToLoad = <None />;
+			componentToLoad = <BoardContainer />;
 		} else {
 			componentToLoad = <Auth />;
 		}
@@ -57,9 +57,10 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<NavBar />
+				<NavBar authed={this.state.authed} />
 				{this.loadComponent()}
-				<h2>Sage Rules!</h2>
+				<h2>I can't waste my Pinnergy</h2>
+				
 			</div>
 		);
 	}

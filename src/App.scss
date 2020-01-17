@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: right;
   color: rgb(114, 87, 114);
   letter-spacing: .5em;
   font-size: large;
@@ -9,4 +9,12 @@
 body {
   background-image: url(./images/diamond.png);
   font-family: 'Open Sans Condensed', 'sans-serif';
+}
+h2 {
+    text-align: left;
+}
+
+.btn .btn-secondary{
+  font-size: 16;
+  letter-spacing: 1em;
 }
