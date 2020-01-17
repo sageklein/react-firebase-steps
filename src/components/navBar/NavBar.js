@@ -16,7 +16,7 @@ class NavBar extends Component {
 	toggle = () => this.setIsOpen(!this.state.isOpen);
 
 	render() {
-		const { authed, setUser } = this.props;
+		const { authed } = this.props;
 		return (
 			<>
 				<Navbar color="light" light expand="md">
