@@ -18,3 +18,38 @@ h2 {
   font-size: 16;
   letter-spacing: 1em;
 }
+.card{
+ max-width: 31em;
+ padding: 2em 2em 2em 2em;
+}
+.button{
+  background: black;
+  border: 0px;
+  font-size: 1em;
+  padding: .2em 2.1em .2em 2.1em;
+  letter-spacing: .2em;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+.button:hover{
+  opacity: 0.8;
+}
+.button a{
+  font-family: 'Open Sans Condensed', 'sans-serif';
+  font-size: 1em;
+  color:white;
+  text-decoration: none;
+}
+.board_img{
+  align-self: center;
+  width: 25em;
+	height: auto;
+}
+.title{
+  font-family: 'Open Sans Condensed', 'sans-serif';
+  font-size: 1.5em;
+  text-align: center;
+}
